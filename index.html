@@ -15,7 +15,7 @@
       <div class="page">
          <header class="header">
             <div class="header__container">
-               <div class="header__logo"></div>
+               <img class="header__logo" src="./images/header__logo.svg" />
                <nav class="header__menu">
                      <a class="header__link" href="#">HOME</a>
                      <a class="header__link">why us</a>
@@ -33,7 +33,7 @@
                   <div class="lead__logo"></div>
                   <h1 class="lead__title">The Coffee Roasters</h1>
                   <h4 class="lead__description">We source our coffee seasonally, from farmers who care, and roast to highlight what makes them special.</h4>
-                  <button class="lead__button" >View our menu</button>
+                  <a class="lead__button" href="#menu">View our menu</a>
                </div>
             </section>
             <section class="product">
@@ -97,7 +97,7 @@
                </div>
                </div>
             </section>
-            <section class="menu">
+            <section class="menu" id="menu">
                <div class="menu__container margin">
                   <div class="menu__info">
                      <h2 class="menu__heading">Explore our menu</h2>
@@ -240,12 +240,25 @@
                   <div class="testimonials__info margin">
                      <h2 class="testimonials__heading">Testimonials</h2>
                      <div class="testimonials__underline"></div>
-                     <p class="testimonials__text">I had a cup of iced coffee, which was perfect size for me. Not too big. The cup is stylish with slim</p>
-                     <p class="testimonials__text">design. The iced coffee was perfect for a warm day like today.</p>
-                     <p class="testimonials__text">The cafe is clean and welcoming.</p>
-                     <p class="testimonials__author">Chiho Sharp, local expert</p>
-                     <div class="testimonials__switcher">
-   
+                     <div class="testimonials__slider">
+                        <input type="radio" name="slider" title="slide1" checked="checked" class="testimonials__radio-button"/>
+                        <input type="radio" name="slider" title="slide2" class="testimonials__radio-button"/>
+                        <input type="radio" name="slider" title="slide3" class="testimonials__radio-button"/>     
+                        <div class="testimonials__inner">
+                           <div class="testimonials__contents">
+                              <p class="testimonials__text">I had a cup of iced coffee, which was perfect size for me. Not too big. The cup is stylish with slim design. The iced coffee was perfect for a warm day like today.</p>
+                              <p class="testimonials__text">The cafe is clean and welcoming</p>
+                              <p class="testimonials__author">Chiho Sharp, local expert</p>
+                           </div>
+                           <div class="testimonials__contents">
+                              <p class="testimonials__text">Кофе со льдом был идеальным для теплого дня, как сегодня.
+                                 Кафе чистое и уютное.</p>
+                              <p class="testimonials__author">Местный эксперт, и швец, и жнец, и на дуде игрец</p>
+                           </div>
+                           <div class="testimonials__contents">
+                              <p class="testimonials__text">Отзыв о кофейне</p>
+                              <p class="testimonials__author">Местный эксперт, кзак-донец и швец, и жнец, и на дуде игрец, и в хоре певец, и в бою молодец</p>
+                           </div>
                      </div>
                   </div>
                </div>
@@ -283,9 +296,7 @@
                                     <a class="news__item-link">&mdash;&nbsp;Read more</a>
                                  </div>
                               </li>
-                              
                            </ul>
-   
                         </div>
                      </div>
                      </div>
@@ -338,9 +349,25 @@
                      </div>
                   </div>
                </section>
-         </main>
          <footer class="footer">
-
+            <div class="footer__container">
+               <p class="footer__copyrigt">Copyright 2022 All rights reserved</p>
+               <div class="footer__links-container">
+                  <ul class="footer__links-list">
+                     <li class="footer__links"><a class="footer__link">Home</a></li>
+                     <li class="footer__links"><a class="footer__link">About</a></li>
+                     <li class="footer__links"><a class="footer__link">Shop</a></li>
+                     <li class="footer__links"><a class="footer__link">Contact</a></li>
+                  </ul>
+               </div>
+               <div class="footer__socials-container">
+                  <ul class="footer__socials-list">
+                     <li class="footer__socials"><a class="footer__social">Fb</a></li>
+                     <li class="footer__socials"><a class="footer__social">Tw</a></li>
+                     <li class="footer__socials"><a class="footer__social">Ig</a></li>
+                  </ul>
+               </div>
+            </div>
          </footer>
       </div>
    </body>
